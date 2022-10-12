@@ -1,0 +1,37 @@
+<section id="banner" style="margin-top: 0;">
+    <header>
+        <h2>會員證</h2>
+    </header>
+    <div class="row" id="test">
+        <div class="col-3 col-12-medium">
+            <section class="">
+                <!-- insert by ryan-->          
+                <h2><span id="username" name="username"><span id="afterHomeName">會員名</span></span><B style="color:#f0d437">"el"</B>呀！</h2>
+                <span id="homepagePic"><img src="images/616.png" width=120px height=100px pxborder-radius=4px></src></span>
+                <p id="memberID" name="memberID">ID: <span id="afterHomeID"> 123</p>
+                <li id="dateOfEntry" name="dateOfEntry">
+                    <p>Date of register</p>
+                    <p><a href="blog.html">Blog</a></p>
+                    <a href="/logout"><button>下次再玩過！</button></a>
+                </ul>
+            </div>
+            <div class="col-3 col-12-medium">
+                <section class="middle">
+                    <form id="entry-form">
+                        <label>
+                            Entry Date:
+                            <input id="entryDate" type="date" value="2020-01-01" class="form-control"
+                                name="entryDate" data-date-end-date="0d"></label>
+                        <input type='submit' value="submit" />
+                    </form>
+                    <div class="pracessBarResult">testing</div>
+                    <div id="page-wrap">
+                        <div class="meter">
+                            <span class="pracessBar"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

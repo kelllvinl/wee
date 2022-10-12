@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="container mt-4">
+        <!-- top logos  -->
+        <div class="row">
+          <div class="col">
+            <img src="images/we_r_kongkonger_fit.png" alt="brand logo" style="height: 200px"><img class="theme-icon" style="height: 200px" src="images/182848.gif">
+          </div>
+        </div>
+    
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0" >
+          <div class="container-fluid px-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown bg-dark">
+                  <a class="nav-link  p-3 text-white" href="index_after.html" id="navbarDropdown" aria-expanded="false">
+                    Homepage
+                  </a>
+               
+    
+                  <li class="nav-item">
+                    <a class="nav-link active p-3" aria-current="page" href="Blog.html">Blog</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link active p-3" aria-current="page" href="Secondhand.html">Secondhand</a>
+                  </li>
+      
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/secondhand.css" />
+    <title>My Selling</title>
+</head>
+
+<body>
+    <div id="new-post" class="container-fluid">
+        <div class="tm-body">
+            <div class="tm-sidebar sticky"  style="position: initial">
+                <section id="welcome" class="tm-content-box tm-banner margin-b-15">
+                    <div class="tm-banner-inner">
+                        <!-- profile_pic -->
+                        <div id="myprofilepic"><img class="d-flex img-fluid" src="images/aa.png" alt="profile pic"></div>
+                        <h1 class="tm-banner-title"><span id="myusername"></span></h1> <!-- username -->
+                        <p class="tm-banner-subtitle">What I wanna Sell!</p> <!-- ?? -->
+                    </div>
+                </section>
+                <div>
+                    <div id="panel">
+                        <div class="new-post col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                            
+                            <h2 class="tm-section-title tm-yellow-text">New Sell</h2>
+                            <!--<form class="text-center">-->
+                            <form class="text-center" id="secondhand-form">
+
+                                <!-- secondhand_name -->
+                                <div class="form-group">
+                                    <input type="text" id="secondhandName" name="secondhandName" class="form-control"
+                                        placeholder="Goods Name" required />
+                                </div>
+
+                                <!-- price -->
+                                <div class="form-group">
+                                    <input type="text" id="price" name="price" class="form-control"
+                                        placeholder="Price" required />
+                                </div>
+
+                                <!-- content -->
+                                <div class="form-group">
+                                    <textarea id="description" name="description" class="form-control" rows="9"
+                                        placeholder="Description" required></textarea>
+                                </div>
+
+                                <!-- image -->
+                                <div class="form-group">
+                                    <input class="tm-yellow-text" id="image" name="filename" type="file" class="blog-file">
+                                </div>
+
+                                <!-- categoryId -->
+                                <div class="form-group">
+                                    <label for="category" class="tm-yellow-text">Category:</label>
+                                    <select name="categoryId" id="categoryId">
+                                        <option value="1">購物</option>
+                                        <option value="2">飲食</option>
+                                        <option value="3">生活</option>
+                                        <option value="4">交通</option>
+                                    </select>
+                                </div>
+
+                                <!-- button -->
+                                <button type="submit"
+                                    class="btn btn-primary tm-button-rounded tm-button-yellow tm-button-no-border tm-button-normal">Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="tm-main-content">
+                <div class="row mb-5">
+                        <div class="media tm-flexbox-ie-fix tm-width-ie-fix">
+                        <div class="col-lg-9">
+                        <div class="secondhand-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <script sr1c="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                <script src="/socket.io/socket.io.js"></script>
+                <script src="js/secondhand.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/home_weather.css">
+  <link rel="stylesheet" href="css/index2.css">
+</head>
+
+<body>
+  <marquee id="home-marquee">網站維修中 I♡JASON 網站維修中 I♡TECKY</marquee>
+
+  <input type="checkbox" id="ham-menu">
+  <label for="ham-menu">
+    <div class="hide-des">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </div>
+  </label>
+  <div class="full-page-green"></div>
+  <div class="ham-menu">
+    <ul class="centre-text bold-text">
+
+      <li>Welcome Guest</li>
+
+      <li><a href="login_page.html">Login</a></li>
+
+      <li><a href="register_page.html">Register</a></li>
+
+      <li>Contact us</li>
+    </ul>
+  </div>
+
+
+<!-- <li></li>
+<li><a href="login_page.html">Login</a></li>
+<li><a href="register_page.html">Register</a></li>
+<li>Contact us</li> -->
+
+  <div class="container">
+    <div id="main-first">
+      <div id="main-first-left">
+        <div id="firstRow3">
+          <a href="theme.html">
+            <div class="squares" id="shopping">衣</div>
+          </a>
+          <a href="theme.html">
+            <div class="squares" id="eating">食</div>
+          </a>
+          <div class="dailyLanguage" id="dailyEnglish">Daily English</div>
+        </div>
+
+        <div id="secondRow3">
+          <div id="hkWeather">HKWeather</div>
+          <div id="weeRhk">Wee are HKer</div>
+          <div id="ukWeather">
+            <!-- UKWeather
+        <div id="weather-all">
+   -->
+            <div class="box radio-group">
+              <select>
+                <option type="radio" name="rotate-cube-side" value="front" checked>倫敦 London</option>
+                <option type="radio" name="rotate-cube-side" value="back">雷丁 Reading</option>
+                <option type="radio" name="rotate-cube-side" value="right">伯明翰 Birmingham</option>
+                <option type="radio" name="rotate-cube-side" value="left">布里斯托 Bristol</option>
+                <option type="radio" name="rotate-cube-side" value="top">諾定咸 Nottingham</option>
+                <option type="radio" name="rotate-cube-side" value="bottom">曼徹斯特 Manchester</option>
+              </select>
+            </div>
+
+            <div class="scene">
+              <div class="cube">
+                <div class="cube__face cube__face--front">
+                  <span id="cityName-London" class="cityName">---</span>
+
+                  <span id="temp-London" class="temp"> ---°C</span>
+
+                  <img id="image-London" class="weather-image" src="https://openweathermap.org/img/wn/02n@2x.png">
+                  <span id="main-London" class="mainDesc">---</span>
+                  <marquee id="discription-London" class="discription">few clouds</marquee>
+
+                </div>
+                <div class="cube__face cube__face--back">
+
+                  <span id="cityName-Reading" class="cityName">---</span>
+
+                  <span id="temp-Reading" class="temp">---</span>
+
+                  <img id="image-Reading" class="weather-image" src="https://openweathermap.org/img/wn/02n@2x.png">
+                  <span id="main-Reading" class="mainDesc">---</span>
+                  <marquee id="discription-Reading" class="discription">few clouds</marquee>
+                </div>
+                <div class="cube__face cube__face--right">
+                  <span id="cityName-Birmingham" class="cityName">---</span>
+
+                  <span id="temp-Birmingham" class="temp">---</span>
+
+                  <img id="image-Birmingham" class="weather-image" src="https://openweathermap.org/img/wn/02n@2x.png">
+                  <span id="main-Birmingham" class="mainDesc">---</span>
+                  <marquee id="discription-Birmingham" class="discription">few clouds</marquee>
+                </div>
+                <div class="cube__face cube__face--left">
+                  <span id="cityName-Bristol" class="cityName">---</span>
+
+                  <span id="temp-Bristol" class="temp">---</span>
+
+                  <img id="image-Bristol" class="weather-image" src="https://openweathermap.org/img/wn/02n@2x.png">
+                  <span id="main-Bristol" class="mainDesc">---</span>
+                  <marquee id="discription-Bristol" class="discription">few clouds</marquee>
+
+                </div>
+                <div class="cube__face cube__face--top">
+                  <span id="cityName-Nottingham" class="cityName">---</span>
+
+                  <span id="temp-Nottingham" class="temp">---</span>
+
+                  <img id="image-Nottingham" class="weather-image" src="https://openweathermap.org/img/wn/02n@2x.png">
+                  <span id="main-Nottingham" class="mainDesc">---</span>
+                  <marquee id="discription-Nottingham" class="discription">few clouds</marquee>
+
+                </div>
+                <div class="cube__face cube__face--bottom">
+                  <span id="cityName-Manchester" class="cityName">---</span>
+
+                  <span id="temp-Manchester" class="temp">---</span>
+
+                  <img id="image-Manchester" class="weather-image" src="https://openweathermap.org/img/wn/02n@2x.png">
+                  <span id="main-Manchester" class="mainDesc">---</span>
+                  <marquee id="discription-Manchester" class="discription">few clouds</marquee>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- </div> -->
+        </div>
+        <br>
+        <div id="thirthRow3">
+
+          <!-- test -->
+          <!-- <div class="notes"> -->
+            <div class="dailyLanguage" id="dailyCantonese">Daily Cantonese</div>
+          <!-- </div> -->
+
+          <a href="theme.html">
+            <div class="squares" id="living">住</div>
+          </a>
+          <a href="theme_walking.html">
+            <div class="squares" id="walking">行</div>
+          </a>
+        </div>
+      </div>
+
+      <div id="blog">
+        BLOG
+      </div>
+    </div>
+
+    <div id="fourRow4">
+      <a href="login_page.html"><div class="squares" id="member-info">MEMBER LOGIN</div></a>
+      <div class="squares" id="memowall">MEMO WALL</div>
+      <div class="squares" id="report">報料啦</div>
+      <div id="secondHand">SECOND HAND</div>
+    </div>
+
+  </div>
+
+  <script type='text/javascript' src="js/home_weather.js"></script>
+  <!-- <script type='text/javascript' src="js/index_before.js"></script> -->
+</body>
+
+</html>

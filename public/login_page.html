@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <title>wee login page</title>
+</head>
+
+<body>
+    <form id="login-form">
+        <!-- Logo -->
+        <div id="homeLogo">
+            <div><a href="index_new.html"><img src="images/logo.jpeg" alt="" style="width: 20%; height: 30%;" /></div>
+            <div><a href="index_new.html" style="text-decoration: none;"></a></div>
+        <h1>Wee.com</h1>
+        <div class="container">
+
+            <label for="uname"><b>Username | 姓名</b></label>
+            <input type="text" name="username" placeholder="Enter Username｜用戶名" required />
+
+            <label for="psw"><b>Password | 密碼</b></label>
+            <input type="password" name="password" placeholder="Enter Password｜密碼" required>
+
+            <div class="container2">
+                <button type="submit">Login</button>
+                <a href="/connect/google" class="btn btn-success">Sign in With Google</a>
+                
+
+            </div>
+    </form>
+    <!--<label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label> -->
+
+    <div class="container2"><a href="index_new.html">Homepage</a><span> | </span>
+    <a href="register_page.html">Do not have an account?</a><span> | </span>
+    <a href="psw.html">Forgot password?</a></div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/login.js"></script>
+    <script src="/index.js"></script>
+
+    <!-- <script src="index_new.js"></script> -->
+
+    </body>
+
+</html>

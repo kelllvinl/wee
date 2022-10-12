@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/regis.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <title>wee login page</title>
+</head>
+
+<body>
+    <form action="action_page.php" id="reg-form">
+        <!-- Logo -->
+        <div id="homeLogo">
+            <div><a href="index_new.html"><img src="images/logo.jpeg" alt="" style="width: 20%; height: 30%;" /></div>
+                <div><a href="index.html" style="text-decoration: none;"></a></div>
+            <h1>Wee.com</h1>
+        <div class="container">
+            <h1>Register 註冊啦</h1>
+            <p>Please fill in this form to create an account. 同我填哂佢！</p>
+            <hr>
+
+            <!-- username -->
+            <label for="username"><b>Username | 姓名</b></label>
+            <input type="text" name="username" placeholder="Enter Your Name｜用戶名" id="username" required>
+            
+            <!-- password -->
+            <label for="psw"><b>Password | 密碼</b></label>
+            <input type="password" name="password" placeholder="Enter Password｜密碼" id="password" required><hr>
+            
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="pswRepeat" id="pswRepeat" required><hr>
+            <span id="message"></span>
+            <!--day_of_birth-->
+            <label for="dob"><b>Day of Birth | 生日</b></label>
+            <input type="date" name="day_of_birth" id="dob" value="1950-01-01" required><hr>
+            
+            <!--day_of_birth-->
+            <label for="bno"><b>BNO VISA Acceptance Date | BNO簽證幾時批</b></label>
+            <input type="date" name="day_of_bnovisa" id="bno" required><hr>
+            
+            <!--email-->
+            <label for="email"><b>Email | 電郵</b></label>
+            <input type="email" name="email" placeholder="Enter Email | 輸入電郵" id="email" required><hr>
+
+            <!--profile_pic-->
+            <label for="pic"><b>Profile Picture | 靚相</b></label>
+            <input type="file" name="filename" placeholder="Paste Your picture" id="pic"><hr>
+        </div>
+            <button type="submit" class="registerbtn">Register | 註冊</button>
+
+ </form>
+        <div class="container signin">
+            <p>Already have an account? <a href="login_page.html">Sign in</a></p> <p>Go home? <a href="index_new.html">Homepage</a></p>
+        </div>
+   
+    <script src="js/regis.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+          crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script> -->
+    <!-- <script>AOS.init()</script> -->
+</body>
+
+</html>

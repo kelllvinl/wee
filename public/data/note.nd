@@ -1,0 +1,101 @@
+// 1
+import XLSX from 'xlsx';
+import pg from 'pg';
+import dotenv from 'dotenv';
+import path from 'path';
+
+dotenv.config({path: path.join(__dirname,"../.env")});
+
+const client = new pg.Client({
+    database: process.env.DB_NAME,
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+})
+
+let xlsxFilename = 'member.csv';
+
+interface member {
+    username: string,  
+    password: string, 
+    day_of_birth: Date;
+    day_of_bnovisa: Date;
+    email: string;
+    profile_pic: string;
+    entry_date: string;
+    // profile_pic: string, 
+    // join_date: Date,
+}
+
+async function main() {
+    await client.connect();
+    let wb = XLSX.readFile(xlsxFilename);
+    //console.log(XLSX.utils.sheet_to_json(wb.Sheets['user']));
+    //console.log(XLSX.utils.sheet_to_json(wb.Sheets['memo']));
+
+    const members = XLSX.utils.sheet_to_json<member>(wb.Sheets['member']);
+
+    for (let member of members) {
+        await client.query(/*sql*/`INSERT INTO member (username, password, day_of_birth, day_of_bnovisa, email, profile_pic, entry_date) values ($1, $2, $3, $4, $5, $6, $7)`, 
+        [member.username, member.password, member.day_of_birth, member.day_of_bnovisa, member.email, member.profile_pic]);
+    }
+
+    let result1 = await client.query('select * from member');
+
+    console.log(result1.rowCount);
+}
+
+main()
+
+// 2
+import XLSX from 'xlsx';
+import pg from 'pg';
+import dotenv from 'dotenv';
+import path from 'path';
+
+dotenv.config({path: path.join(__dirname,"../.env")});
+
+const client = new pg.Client({
+    database: process.env.DB_NAME,
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+})
+
+let xlsxFilename = 'quiz_questions.csv';
+
+interface question {
+question_id: number,
+questions: string,
+}
+
+async function main() {
+    await client.connect();
+    let wb = XLSX.readFile(xlsxFilename);
+    //console.log(XLSX.utils.sheet_to_json(wb.Sheets['user']));
+    //console.log(XLSX.utils.sheet_to_json(wb.Sheets['memo']));
+
+    const questions = XLSX.utils.sheet_to_json<question>(wb.Sheets['question']);
+
+    for (let question of questions) {
+        await client.query(/*sql*/`INSERT INTO question (question_id, questions) values ($1, $2)`, 
+        [question.question_id, question.questions]);
+    }
+
+    let result1 = await client.query('select * from quiz_questions');
+
+    console.log(result1.rowCount);
+}
+
+main()
+
+// 3
+
+Import a CSV file into a table using COPY statement
+
+COPY persons(first_name, last_name, dob, email)
+FROM 'C:\sampledb\persons.csv'
+DELIMITER ','
+CSV HEADER;
+
+Export PostgreSQL Table To CSV File
+COPY persons(first_name,last_name,email) 
+TO 'C:\tmp\persons_partial_db.csv' DELIMITER ',' CSV HEADER;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - upload</title>
+
+</head>
+<body>
+    <div>
+        <div id="panel">
+            <div class="new-post col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                <h1>FOR ADMIN USE ONLY</h1>
+                <!--<form class="text-center">-->
+                <form class="text-center" id="shop-form">
+                <p></p>
+                <h2>Data upload</h2>
+                    <!-- shops name -->
+                    <div class="form-group">
+                    <input type="text" id="shopName" name="shopName" class="form-control" placeholder="Shop name" required />
+                    </div>
+                    <p></p>
+                    <!-- shops address -->
+                    <div class="form-group">
+                    <input type="text" id="shopAddress" name="shopAddress" class="form-control" placeholder="Address" required />
+                    </div>
+                    <p></p>
+                    <!-- opening hours -->
+                    <div class="form-group">
+                    <input type="text" id="openingHour" name="openingHour" class="form-control" placeholder="Opening Hours">
+                    </div>
+                    <p></p>
+                    <!-- shops Telephone -->
+                    <div class="form-group">
+                    <input type="text" id="shopTel" name="shopTel" class="form-control" placeholder="Telephone" required />
+                    </div>
+                    <p></p>
+
+                    <!-- remarks -->
+                    <div class="form-group">
+                        <textarea id="remarks" name="remarks" class="form-control" rows="5" placeholder="Remarks"></textarea>
+                        </div>
+                        <p></p>
+
+                    <!-- shop image -->
+                    <div class="form-group">
+                    <input id="shopImg" name="shopImg" type="file" class="shop-file" multiple>
+                    </div>
+                    <p></p>
+                    <!-- categoryId -->
+                    <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select name="categoryId" id="categoryId">
+                    <option value="1">購物</option>
+                    <option value="2">飲食</option>
+                    <option value="3">生活</option>
+                    <option value="4">交通</option>
+                    </select>
+                    </div>
+                    <p></p>
+                    <!-- button -->
+                    <button type="submit" class="btn btn-primary tm-button-rounded tm-button-orange tm-button-no-border tm-button-normal">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="js/admin.js"></script>   
+</html>
